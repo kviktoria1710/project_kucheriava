@@ -70,3 +70,103 @@ body {
     margin-left: 80px;
     margin-right: 108px;
 }
+
+/* Section 2 */
+
+.screenshots .container h2 {
+    margin-top: 146px;
+}
+
+.screen_box_1 {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 198px;
+    margin-bottom: 268px;
+}
+
+.screen_box_1 .screen_text h3 {
+    font-size: 36px;
+    letter-spacing: 1px;
+    color: #648cff;
+    text-transform: uppercase;
+    text-align: justify; 
+    margin-bottom: 37px;
+}
+
+.screen_box_1 .screen_text p {
+    font-size: 24px;
+    text-align: left;
+    color: #353854;
+    line-height: 1.5;
+    max-width: 500px;
+}
+
+.screen_box_1 .icon {
+    margin-top: 84px;
+    margin-bottom: 50px;
+}
+
+.screen_box_1 .statistics {
+    margin-top: 58px;
+}
+
+.cloudy_weather {
+    margin-left: 90px;
+    margin-right: 183px;
+    height: 605px;
+    width: 290px;
+}
+
+.background_text_1 {
+    font-size: 43.5px;
+    font-weight: 100;
+    font-family: "Ubuntu";
+    color: rgba(237, 237, 242, 0.588);
+    line-height: 3.472;
+    text-align: left;
+    transform: matrix(0, 5.34835300729806, -5.34835300729811, 0, 0, 0);
+    position: absolute;
+    left: 320px;
+    top: 230px;
+    z-index: -1;
+}
+
+.small_circle_1 {
+    font-size: 18px;
+    font-family: "Ubuntu";
+    color: white;
+    font-weight: 500;
+    border-radius: 50%;
+    background-color: #fcec64;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 321px;
+    top: 171px;
+    z-index: 3;
+}
+
+.temperature_circle_1 {
+    font-size: 30px;
+    font-family: "Ubuntu";
+    color: white;
+    font-weight: 500;
+    border-radius: 50%;
+    background-color: #6ca3ff;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 25px;
+    top: 380px;
+    z-index: 3;
+}
+
