@@ -77,17 +77,29 @@ body {
     margin-top: 146px;
 }
 
-.screen_box_1 {
+.screen_box_1, .screen_box_2, .screen_box_3 {
     display: flex;
     align-items: flex-start;
     position: relative;
     width: 100%;
     box-sizing: border-box;
+}
+
+.screen_box_1 {
     margin-top: 198px;
     margin-bottom: 268px;
 }
 
-.screen_box_1 .screen_text h3 {
+.screen_box_2 {
+    justify-content: space-between;
+    margin-bottom: 272px;
+}
+
+.screen_box_3 {
+    margin-bottom: 104px;
+}
+
+.screen_box_1 .screen_text h3, .screen_box_2 .screen_text h3, .screen_box_3 .screen_text h3 {
     font-size: 36px;
     letter-spacing: 1px;
     color: #648cff;
@@ -96,7 +108,7 @@ body {
     margin-bottom: 37px;
 }
 
-.screen_box_1 .screen_text p {
+.screen_box_1 .screen_text p, .screen_box_2 .screen_text p, .screen_box_3 .screen_text p {
     font-size: 24px;
     text-align: left;
     color: #353854;
@@ -109,18 +121,30 @@ body {
     margin-bottom: 50px;
 }
 
-.screen_box_1 .statistics {
+.screen_box_1 .statistics, .screen_box_3 .statistics  {
     margin-top: 58px;
+}
+
+.cloudy_weather, .sunny_weather, .rainy_weather  {
+    height: 605px;
+    width: 290px;
 }
 
 .cloudy_weather {
     margin-left: 90px;
     margin-right: 183px;
-    height: 605px;
-    width: 290px;
 }
 
-.background_text_1 {
+.rainy_weather {
+    margin-left: 95px;
+    margin-right: 226px;
+}
+
+.sunny_weather {
+    margin-right: 187px;
+}
+
+.background_text_1, .background_text_2, .background_text_3  {
     font-size: 43.5px;
     font-weight: 100;
     font-family: "Ubuntu";
@@ -129,72 +153,57 @@ body {
     text-align: left;
     transform: matrix(0, 5.34835300729806, -5.34835300729811, 0, 0, 0);
     position: absolute;
-    left: 320px;
-    top: 230px;
     z-index: -1;
 }
 
-.small_circle_1 {
-    font-size: 18px;
+.background_text_1 {
+    left: 320px;
+    top: 230px;
+}
+
+.background_text_2 {
+    left: 940px;
+    top: 210px;
+}
+
+.background_text_3 {
+    left: 365px;
+    top: 230px;
+}
+
+.small_circle_1, .small_circle_2, .small_circle_3, .temperature_circle_1, .temperature_circle_2, .temperature_circle_3 {
     font-family: "Ubuntu";
-    color: white;
     font-weight: 500;
     border-radius: 50%;
-    background-color: #fcec64;
     width: 90px;
     height: 90px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
+    z-index: 3;
+}
+
+.small_circle_1, .small_circle_2, .small_circle_3 {
+    font-size: 18px;
+}
+
+.small_circle_1 {
+    color: white;
+    background-color: #fcec64;
     left: 321px;
     top: 171px;
-    z-index: 3;
+}
+
+.temperature_circle_1, .temperature_circle_2, .temperature_circle_3 {
+    font-size: 30px;
+    color: white;
 }
 
 .temperature_circle_1 {
-    font-size: 30px;
-    font-family: "Ubuntu";
-    color: white;
-    font-weight: 500;
-    border-radius: 50%;
     background-color: #6ca3ff;
-    width: 90px;
-    height: 90px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
     left: 25px;
     top: 380px;
-    z-index: 3;
-}
-
-.screen_box_2 {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    position: relative;
-    margin-bottom: 272px;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-.screen_box_2 .screen_text h3 {
-    font-size: 36px;
-    letter-spacing: 1px;
-    color: #648cff;
-    text-transform: uppercase;
-    text-align: justify; 
-    margin-bottom: 37px;
-}
-
-.screen_box_2 .screen_text p {
-    font-size: 24px;
-    text-align: left;
-    color: #353854;
-    line-height: 1.5;
-    max-width: 500px;
 }
 
 .screen_box_2 .icon {
@@ -206,86 +215,17 @@ body {
     margin-top: 52px;
 }
 
-.sunny_weather {
-    margin-right: 187px;
-    height: 605px;
-    width: 290px;
-}
-
-.background_text_2 {
-    font-size: 43.5px;
-    font-weight: 100;
-    font-family: "Ubuntu";
-    color: rgba(237, 237, 242, 0.588);
-    line-height: 3.472;
-    text-align: left;
-    transform: matrix(0, 5.34835300729806, -5.34835300729811, 0, 0, 0);
-    position: absolute;
-    left: 940px;
-    top: 210px;
-    z-index: -1;
-}
-
 .small_circle_2 {
-    font-size: 18px;
-    font-family: "Ubuntu";
     color: white;
-    font-weight: 500;
-    border-radius: 50%;
     background-color: #f2a14e;
-    width: 90px;
-    height: 90px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
     left: 955px;
     top: 140px;
-    z-index: 3;
 }
 
 .temperature_circle_2 {
-    font-size: 30px;
-    font-family: "Ubuntu";
-    color: white;
-    font-weight: 500;
-    border-radius: 50%;
     background-color: #fc6a42;
-    width: 90px;
-    height: 90px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
     left: 635px;
     top: 400px;
-    z-index: 3;
-}
-
-.screen_box_3 {
-    display: flex;
-    align-items: flex-start;
-    position: relative;
-    width: 100%;
-    box-sizing: border-box;
-    margin-bottom: 104px;
-}
-
-.screen_box_3 .screen_text h3 {
-    font-size: 36px;
-    letter-spacing: 1px;
-    color: #648cff;
-    text-transform: uppercase;
-    text-align: justify; 
-    margin-bottom: 37px;
-}
-
-.screen_box_3 .screen_text p {
-    font-size: 24px;
-    text-align: left;
-    color: #353854;
-    line-height: 1.5;
-    max-width: 500px;
 }
 
 .screen_box_3 .icon {
@@ -293,63 +233,15 @@ body {
     margin-bottom: 48px;
 }
 
-.screen_box_3 .statistics {
-    margin-top: 58px;
-}
-
-.rainy_weather {
-    margin-left: 95px;
-    margin-right: 226px;
-    height: 605px;
-    width: 290px;
-}
-
-.background_text_3 {
-    font-size: 43.5px;
-    font-weight: 100;
-    font-family: "Ubuntu";
-    color: rgba(237, 237, 242, 0.588);
-    line-height: 3.472;
-    text-align: left;
-    transform: matrix(0, 5.34835300729806, -5.34835300729811, 0, 0, 0);
-    position: absolute;
-    left: 365px;
-    top: 230px;
-    z-index: -1;
-}
-
 .small_circle_3 {
-    font-size: 18px;
-    font-family: "Ubuntu";
     color: #7e8c91;
-    font-weight: 500;
-    border-radius: 50%;
     background-color: #b8faee;
-    width: 90px;
-    height: 90px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
     left: 326px;
     top: 161px;
-    z-index: 3;
 }
 
 .temperature_circle_3 {
-    font-size: 30px;
-    font-family: "Ubuntu";
-    color: white;
-    font-weight: 500;
-    border-radius: 50%;
     background-color: #7693c8;
-    width: 90px;
-    height: 90px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
     left: 30px;
     top: 390px;
-    z-index: 3;
 }
