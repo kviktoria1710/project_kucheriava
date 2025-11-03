@@ -1,0 +1,72 @@
+@import url(reset.css);
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+/* Section 1 */
+
+.container h2 {
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 1px;
+    color: #648cff;
+    text-transform: uppercase;
+    text-align: center; 
+    margin-top: 58px;
+    margin-bottom: 26px;
+}
+
+.container p {
+    font-size: 18px;
+    color: #999999;
+    text-align: center;
+}
+
+.slider_box {
+    position: relative;
+    min-height: 659px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 62px;
+}
+
+.arrow_left {
+    margin-left: 42px; 
+}
+
+.arrow_right {
+    margin-right: 42px;
+}
+
+.widget_center {
+    position: relative; 
+    z-index: 2;
+    box-shadow: 0px 30px 35px rgba(0, 0, 0, 0.15);
+    width: 370px;
+}
+
+.widget_left, .widget_right {
+    position: absolute;
+    z-index: 1; 
+    box-shadow: 0px 30px 35px rgba(0, 0, 0, 0.15);
+    width: 318px;
+}
+
+.widget_left {
+    right: 50%;
+    margin-right: 80px;
+    margin-left: 108px;
+}
+
+.widget_right {
+    left: 50%;
+    margin-left: 80px;
+    margin-right: 108px;
+}
